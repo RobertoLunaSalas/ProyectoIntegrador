@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+
+body {
+    background-image: url('../img/madera.jpeg');
+    background-size: cover;
+    
+}
+
+.navbar{
+    background-color: #DCBEA2;
+}
+
+#navbarNav{
+    color: black;
+    font-size: 28px;
+}
+
+#titulos{
+    color: rgb(224, 81, 3);
+    font-size: 70px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+}
+
+#subtitulos{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#diseñotitulos{
+    background-color: #E9C8C8;
+    padding: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 7vh;
+    font-family: 'Roboto';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.listaherramientas{
+    background-color:  #DCBEA2;
+    margin-left: 3%;
+}
+
+#cajaherramientas{
+    text-align: center;
+}
+
+#elementos{
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color:  #DCBEA2;
+}

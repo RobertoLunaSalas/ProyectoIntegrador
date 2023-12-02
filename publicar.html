@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Publicar Herramienta - Alquiler de Herramientas</title>
+    <link rel="stylesheet" type="text/css" href="stylespub.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a la Plataforma de Alquiler de Herramientas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publicar.html">Publicar Herramienta</a></li>
+                <li><a href="buscar.html">Buscar Herramienta</a></li>
+                <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="publicar-herramienta">
+            <h2>Publicar una Herramienta</h2>
+            <form>
+                <label for="nombre-herramienta">Nombre de la Herramienta:</label>
+                <input type="text" id="nombre-herramienta" name="nombre-herramienta" required>
+                <label for="descripcion-herramienta">Descripción:</label>
+                <textarea id="descripcion-herramienta" name="descripcion-herramienta" rows="4" required></textarea>
+                <label for="precio-herramienta">Precio de Alquiler:</label>
+                <input type="number" id="precio-herramienta" name="precio-herramienta" required>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
