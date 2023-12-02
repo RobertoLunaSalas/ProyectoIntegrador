@@ -75,7 +75,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">MARTILLO DEMOLEDOR BOSCH GSH5-CE</a></p>
                               <p class="card-text text-center">Martillo de percusión con SDS-Max Bosch GSH 5 CE Professional, con potencia imbatible con hasta un 40% menos de vibraciones.</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('MARTILLO DEMOLEDOR BOSCH GSH5-CE', 'Martillo de percusión con SDS-Max Bosch GSH 5 CE Professional, con potencia imbatible con hasta un 40% menos de vibraciones.', 'img/mar1.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">MARTILLO DEMOLEDOR BOSCH GSH-5</a></p>
                               <p class="card-text text-center">Martillo de percusión con SDS-Max Bosch GSH 5 Professional, con el mayor tiempo de vida de la clase con la mayor potencia: 1.100 W. El martillo percutor básico para trabajos de cincelado ligeros.</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('MARTILLO DEMOLEDOR BOSCH GSH-5', 'Martillo de percusión con SDS-Max Bosch GSH 5 Professional, con el mayor tiempo de vida de la clase con la mayor potencia: 1.100 W. El martillo percutor básico para trabajos de cincelado ligeros.', 'img/mar2.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">MARTILLO DEMOLEDOR BOSCH GSH-11E</a></p>
                               <p class="card-text text-center">Martillo de percusión con SDS-Max Bosch GSH 11 E Professional. El martillo percutor especialista para perforaciones y trabajos de demolición</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('MARTILLO DEMOLEDOR BOSCH GSH-11E', 'Martillo de percusión con SDS-Max Bosch GSH 11 E Professional. El martillo percutor especialista para perforaciones y trabajos de demolición', 'img/mar3.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">MARTILLO DEMOLEDOR BOSCH GSH11-VC</a></p>
                               <p class="card-text text-center">Martillo de percusión con SDS-Max Bosch GSH 11 VC Professional, con capacidad de remoción imbatible: 1.100 kg de hormigón por hora. El martillo percutor de 11 kg más potente de Bosch.</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('MARTILLO DEMOLEDOR BOSCH GSH11-VC', 'Martillo de percusión con SDS-Max Bosch GSH 11 VC Professional, con capacidad de remoción imbatible: 1.100 kg de hormigón por hora. El martillo percutor de 11 kg más potente de Bosch.', 'img/mar1.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">MARTILLO DEMOLEDOR BOSCH GSH 16-28</a></p>
                               <p class="card-text text-center">Martillo Demoledor Bosch GSH 16-28 Professional con Sistema de encastre hexagonal de 28 mm. Este martillo percutor está diseñado con un sistema antivibración que reduce las vibraciones en un 40% respecto de otras marcas, consecuentemente reduciendo la fatiga del operador.</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('MARTILLO DEMOLEDOR BOSCH GSH 16-28', 'Martillo Demoledor Bosch GSH 16-28 Professional con Sistema de encastre hexagonal de 28 mm. Este martillo percutor está diseñado con un sistema antivibración que reduce las vibraciones en un 40% respecto de otras marcas, consecuentemente reduciendo la fatiga del operador.', 'img/mar2.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">MARTILLO DEMOLEDOR BOSCH GSH 27 VC</a></p>
                               <p class="card-text text-center">El Martillo Rompe Pavimento Eléctrico más potente del mundo con las más bajas vibraciones en su categoría. Diseñado con un sistema anti vibración que reduce las vibraciones en un 60% respecto de otras marcas, consecuentemente reduciendo la fatiga del operador.</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('MARTILLO DEMOLEDOR BOSCH GSH 27 VC', 'El Martillo Rompe Pavimento Eléctrico más potente del mundo con las más bajas vibraciones en su categoría. Diseñado con un sistema anti vibración que reduce las vibraciones en un 60% respecto de otras marcas, consecuentemente reduciendo la fatiga del operador.', 'img/mar3.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -139,6 +139,22 @@
 
         
     </div>
+
+    <script>
+        function agregarProducto(nombreProducto, descripcionProducto, imagenProducto) {
+            var producto = {
+                nombre: nombreProducto,
+                descripcion: descripcionProducto,
+                imagen: imagenProducto
+            };
+
+            var productos = JSON.parse(localStorage.getItem('productos')) || [];
+            productos.push(producto);
+            localStorage.setItem('productos', JSON.stringify(productos));
+
+            window.location.href = 'misprestamos.html'; // Redirige a la página de Mis Prestamos
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

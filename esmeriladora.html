@@ -75,7 +75,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">ESMERILADORA DOBLE EDCO 2GC/2EC</a></p>
                               <p class="card-text text-center">Las esmeriladoras de hormigón EDCO se han utilizado por más de 50 años como un método para reparar superficies de losas dañadas por acabado inapropiado, fuego, lluvia, congelación o enrasados incorrectos, y superficies</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('ESMERILADORA DOBLE EDCO 2GC/2EC', 'Las esmeriladoras de hormigón EDCO se han utilizado por más de 50 años como un método para reparar superficies de losas dañadas por acabado inapropiado, fuego, lluvia, congelación o enrasados incorrectos, y superficies', 'img/esme1.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">ESMERILADORA MAGNETICA DOBLE EDCO MAGNA TRAP</a></p>
                               <p class="card-text text-center">Esta es la pulidora específica para esmerilar hormigón, nivelar superficies irregulares, reducir rebarbas, reducir agregados en superficie , eliminar marcas de lluvia , dañado de la superficie, marcas de allanadoras, y hacerla más pulida. También remueve masillas y pinturas epoxi ó poliuretanicas, resinas, aceites y grasas, etc. </p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('ESMERILADORA MAGNETICA DOBLE EDCO MAGNA TRAP', 'Esta es la pulidora específica para esmerilar hormigón, nivelar superficies irregulares, reducir rebarbas, reducir agregados en superficie , eliminar marcas de lluvia , dañado de la superficie, marcas de allanadoras, y hacerla más pulida. También remueve masillas y pinturas epoxi ó poliuretanicas, resinas, aceites y grasas, etc.', 'img/esme2.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                             <div class="card-body">
                               <p class="card-text text-center h3 mt-2 titulo-producto">ESMERILADORA TURBO EDCO TG10</a></p>
                               <p class="card-text text-center">La Esmeriladora Edco Turbo Grinder TG10 trabaja cuatro veces más rápido que las pulidoras convencionales y esmeriladoras tradicionales. La Esmeriladora Edco Turbo Grinder TG10 de Alta Velocidad es ideal para el pulido de salientes de juntas</p>
-                              <button type="button" class="btn btn-warning" id="botonesagregar">Agregar</button>
+                              <button type="button" class="btn btn-warning" id="botonesagregar" onclick="agregarProducto('ESMERILADORA TURBO EDCO TG10', 'La Esmeriladora Edco Turbo Grinder TG10 trabaja cuatro veces más rápido que las pulidoras convencionales y esmeriladoras tradicionales. La Esmeriladora Edco Turbo Grinder TG10 de Alta Velocidad es ideal para el pulido de salientes de juntas', 'img/esme3.png')">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -106,6 +106,22 @@
 
         
     </div>
+
+    <script>
+        function agregarProducto(nombreProducto, descripcionProducto, imagenProducto) {
+            var producto = {
+                nombre: nombreProducto,
+                descripcion: descripcionProducto,
+                imagen: imagenProducto
+            };
+
+            var productos = JSON.parse(localStorage.getItem('productos')) || [];
+            productos.push(producto);
+            localStorage.setItem('productos', JSON.stringify(productos));
+
+            window.location.href = 'misprestamos.html'; // Redirige a la página de Mis Prestamos
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

@@ -59,6 +59,10 @@ body {
     background-color: #E9C8C8;
 }
 
+#productosagregados{
+    background-color: #DCBEA2;
+}
+
 .titulo-producto { /* Color de fondo */
     font-family: 'Arial', sans-serif; /* Fuente del texto */
     padding: 10px; /* Espaciado interior */
