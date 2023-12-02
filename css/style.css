@@ -285,11 +285,10 @@ body {
 
 #iniciosesion {
     flex: 1; /* Hace que el formulario ocupe el espacio disponible */
-    padding: 30px; /* Añade un espacio interno al formulario */
+    padding-left: 2px; /* Añade un espacio interno al formulario */
 }
 
-.imageniniciosesion {
-    margin-left: auto; /* Mueve la imagen hacia la derecha */
-    margin-right: 30px; /* Añade un margen a la derecha de la imagen */
+.imageniniciosesion { /* Mueve la imagen hacia la derecha */
+    margin-right: 46px; /* Añade un margen a la derecha de la imagen */
     margin-bottom: 30px;
 }
