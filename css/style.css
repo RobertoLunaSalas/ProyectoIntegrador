@@ -300,7 +300,7 @@ body {
 
 
 .imageniniciosesion {
-    margin-left: auto; /* Mueve la imagen hacia la derecha */
+    margin-left: 100px; /* Mueve la imagen hacia la derecha */
     margin-right: 30px; /* Añade un margen a la derecha de la imagen */
     display: block; /* Ajusta el margen automáticamente */
 }
