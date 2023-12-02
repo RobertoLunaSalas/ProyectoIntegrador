@@ -55,6 +55,7 @@ body {
     background-color:  #DCBEA2;
 }
 
+<<<<<<< Updated upstream
 #productosherramientas{
     background-color: #E9C8C8;
 }
@@ -99,3 +100,158 @@ body {
     margin-top: 30px;
     margin-left: 113px;
 }
+=======
+#mi-perfil-container {
+    background-color: #E9C8C8; /* Color rosa */
+    border-radius: 15px; /* Puntas circulares */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+    margin-top: 20px; /* Espaciado superior para separarlo de las secciones de arriba */
+}
+
+#mi-perfil-titulo {
+    color: #FFF; /* Texto blanco */
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negritas */
+}
+
+/* Estilos adicionales para "Nuevo contenedor" y "Amarillo contenedor" */
+#nuevo-contenedor {
+    background-color: #E3C7AD;
+    width: 1355px;
+    height: 651px;
+    margin: 20px auto;
+    position: relative; /* Necesario para posicionar elementos hijos de manera absoluta */
+}
+
+#amarillo-contenedor {
+    background-color: #F1AE00; /* Amarillo */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #000; /* Borde de 2 píxeles en color negro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra con desplazamiento de 2px hacia abajo, 5px de desenfoque, y opacidad de 0.2 */
+}
+
+#perfil-info {
+    display: flex;
+    align-items: center;
+}
+
+#estrellas {
+    display: flex;
+    align-items: center;
+    color: #FFD600; /* Amarillo */
+}
+
+#estrellas span {
+    margin-left: 5px;
+}
+
+#configurar-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+}
+
+#configurar-perfil a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+    display: flex; /* Hace que el enlace se comporte como un contenedor flex */
+    align-items: center; /* Alinea elementos verticalmente en el centro */
+}
+
+#configurar-perfil img {
+    width: 30px; /* Ancho fijo para la imagen del engranaje */
+    height: auto; /* Altura ajustada automáticamente según la proporción original */
+    margin-right: 5px; /* Margen a la derecha del icono */
+}
+
+#configurar-perfil p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+#contenedor-textos-adicionales {
+    background-color: #E3C7AD; /* Color similar al contenedor amarillo */
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    bottom: calc(10px + 30px); /* Ajustado para colocar los textos debajo del contenedor amarillo (10px de margen + altura del contenedor amarillo) */
+    left: 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.publicar-texto,
+.editar-texto {
+    color: #E7641B;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px; /* 176% */
+}
+
+/* Estilos para la nueva sección "producto-info" */
+#producto-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+    left: 30px;
+    width: calc(100% - 60px);
+}
+
+#nombre-y-icono {
+    display: flex;
+    align-items: center;
+}
+
+#product-name {
+    color: #E7641B;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#icono-perfil {
+    width: 30px;
+    height: auto;
+}
+
+#ultimo-producto {
+    flex-grow: 1;
+    margin: 0 20px; /* Añadido margen para separar los elementos */
+}
+
+#product-date {
+    color: #E7641B;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#descripcion-producto {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#imagen-producto {
+    width: 100px;
+    height: auto;
+}
+>>>>>>> Stashed changes
