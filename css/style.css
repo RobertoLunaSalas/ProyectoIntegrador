@@ -270,7 +270,8 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     text-align: center; /* Centra el texto */
-    flex-grow: 1; /* Permite que la descripción ocupe el espacio restante */
+    padding-left: 6em;
+    padding-right: 17em;
 }
 
 #imagen-producto {
