@@ -63,53 +63,42 @@
     </nav>
 
     <div id="mi-perfil-container">
-        <div id="mi-perfil-titulo">Mi perfil</div>
+        <div id="mi-perfil-titulo">Configurar Perfil</div>
     </div>
 
-    <div id="nuevo-contenedor">
-        <div id="amarillo-contenedor">
-            <div id="perfil-info">
-                <img src="img/perfil.png" alt="Perfil" width="60" height="60">
-                <div>
-                    <p>Roberto Luna Salas</p>
-                    <div id="estrellas">
-                        ★★★★★ <!-- Puedes ajustar la cantidad de estrellas según la calificación -->
-                        <span>5 reseñas</span>
-                    </div>
+    <div id="new-contenedor">
+        <div class="container mt-5" id="iniciosesion">
+            <div class="row justify-content-center">
+                <div class="col-md-6 justify-content-center">
+                    <img class="imageniniciosesion" src="img/perfil.png" alt="Bootstrap" width="120" height="120">
+                    <h2 class="text-center mb-4">cambiar correo</h2>
+                    <form id="loginForm" action="#" method="post" novalidate>
+                        <div class="form-group mb-4 h5">
+                            <label for="mail" class="mb-4">Cambiar Correo:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                            <div class="invalid-feedback mb-4">Por favor, ingresa tu nuevo correo.</div>
+                        </div>
+                        <div class="form-group h5">
+                            <label for="password" class="mb-4">Contraseña Antigua:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu contraseña.</div>
+                        </div>
+                        <div class="form-group h5">
+                            <label for="password" class="mb-4">Contraseña Nueva:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nueva contraseña.</div>
+                        </div>
+                        <div class="form-group h5">
+                            <label for="password" class="mb-4">Confirmar Contraseña Nueva:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <div class="invalid-feedback">Por favor ingresa nuevamente tu contraseña contraseña.</div>
+                        </div>
+
+                        <a href="index.html"><button type="button" class="btn btn-primary" id="botoniniciosesion">Guardar</button></a>
+
+                    </form>
                 </div>
             </div>
-            <div id="configurar-perfil">
-                <a href="ruta-configurar-perfil.html">
-                    <img src="img/engranaje.png" alt="Configurar Perfil" width="30" height="30">
-                    <p>Configurar Perfil</p>
-                </a>
-            </div>
         </div>
-        <div id="contenedor-textos-adicionales">
-            <a href="ruta-publicar-herramienta.html" class="publicar-texto">Publicar Nueva Herramienta</a>
-            <a href="ruta-editar-publicacion.html" class="editar-texto">Editar Publicación</a>
-        </div>
-        <div id="producto-info">
-            <div id="nombre-y-icono">
-                <!-- Nombre y icono de perfil -->
-                <p id="product-name">Roberto Luna Salas</p>
-                <img src="img/perfil.png" alt="Icono de perfil" id="icono-perfil">
-            </div>
 
-            <div id="ultimo-producto">
-                <!-- Último producto dado de alta -->
-                <p id="product-date">02/01/2023</p>
-                <p id="descripcion-producto">Para consolidar la masa de concreto dentro del encofrado y a la vez, moviendo el material para remover puntos altos y rellenar los bajos en la losa.</p>
-                <img src="img/allanadora1.png" alt="Imagen del producto" id="imagen-producto">
-            </div>
-        </div>
     </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>

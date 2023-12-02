@@ -118,9 +118,18 @@ body {
 #nuevo-contenedor {
     background-color: #E3C7AD;
     width: 1355px;
-    height: 651px;
+    height: 851px;
     margin: 20px auto;
     position: relative; /* Necesario para posicionar elementos hijos de manera absoluta */
+}
+
+#new-contenedor {
+    background-color: #E3C7AD;
+    width: 1355px;
+    height: 851px;
+    margin: 20px auto;
+    position: relative; /* Necesario para posicionar elementos hijos de manera absoluta */
+    display: flex;
 }
 
 #amarillo-contenedor {
@@ -176,17 +185,18 @@ body {
 }
 
 #contenedor-textos-adicionales {
-    background-color: #E3C7AD; /* Color similar al contenedor amarillo */
+    background-color: #E3C7AD;
     border-radius: 10px;
     padding: 10px;
-    position: absolute;
-    bottom: calc(10px + 30px); /* Ajustado para colocar los textos debajo del contenedor amarillo (10px de margen + altura del contenedor amarillo) */
-    left: 30px;
+    margin-top: 100px;
     width: calc(100% - 60px);
     display: flex;
     justify-content: space-between;
     border: 2px solid #000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative; /* Cambiado a 'relative' para que sea relativo al amarillo-contenedor */
+    top: 165px; /* Ajuste para mantener el margen superior */
+    left: 30px;
 }
 
 .publicar-texto,
@@ -197,17 +207,16 @@ body {
     font-size: 25px;
     font-style: normal;
     font-weight: 900;
-    line-height: 44px; /* 176% */
+    line-height: 44px;
 }
 
-/* Estilos para la nueva sección "producto-info" */
 #producto-info {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    position: relative;
-    left: 30px;
-    width: calc(100% - 60px);
+    justify-content: space;
+    align-items: center;
+    margin-top: 230px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 #nombre-y-icono {
@@ -221,17 +230,25 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
-    margin-right: 10px;
+    margin-left: 40px;
 }
 
 #icono-perfil {
-    width: 30px;
+    width: 170px;
     height: auto;
+    margin-left: 40px;
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #000;
+    background: linear-gradient(180deg, #E9C8C8 0%, rgba(233, 200, 200, 0.19) 0.01%, rgba(233, 200, 200, 0.00) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    mix-blend-mode: darken;
 }
 
 #ultimo-producto {
     flex-grow: 1;
-    margin: 0 20px; /* Añadido margen para separar los elementos */
+    margin-left: auto; /* Mueve "ultimo-producto" hacia la derecha */
+    text-align: right; /* Alinea el texto a la derecha */
 }
 
 #product-date {
@@ -240,15 +257,34 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
+    margin-right: 10px;
+    size: 150px;
 }
 
 #descripcion-producto {
     color: #333;
     font-family: Arial, sans-serif;
     font-size: 16px;
+    text-align: center; /* Centra el texto */
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio restante */
 }
 
 #imagen-producto {
-    width: 100px;
+    width: 220px;
     height: auto;
+    border-radius: 20px;
+    border: 3px solid #000;
+    background: linear-gradient(180deg, #E9C8C8 0%, rgba(233, 200, 200, 0.19) 0.01%, rgba(233, 200, 200, 0.00) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    mix-blend-mode: darken;
+}
+
+#iniciosesion {
+    flex: 1; /* Hace que el formulario ocupe el espacio disponible */
+    padding: 30px; /* Añade un espacio interno al formulario */
+}
+
+.imageniniciosesion {
+    margin-left: auto; /* Mueve la imagen hacia la derecha */
+    margin-right: 30px; /* Añade un margen a la derecha de la imagen */
+    margin-bottom: 30px;
 }
