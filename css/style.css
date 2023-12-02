@@ -249,6 +249,12 @@ body {
     mix-blend-mode: darken;
 }
 
+#perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea el contenido horizontalmente en el centro */
+}
+
 #ultimo-producto {
     flex-grow: 1;
     margin-left: auto; /* Mueve "ultimo-producto" hacia la derecha */
@@ -283,12 +289,33 @@ body {
     mix-blend-mode: darken;
 }
 
-#iniciosesion {
-    flex: 1; /* Hace que el formulario ocupe el espacio disponible */
-    padding-left: 2px; /* Añade un espacio interno al formulario */
+#logeo {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos hijos en columna */
+    justify-content: center; /* Centra verticalmente los elementos hijos */
+    align-items: center; /* Centra horizontalmente los elementos hijos */
 }
 
-.imageniniciosesion { /* Mueve la imagen hacia la derecha */
-    margin-right: 46px; /* Añade un margen a la derecha de la imagen */
-    margin-bottom: 30px;
+
+.imageniniciosesion {
+    margin-left: auto; /* Mueve la imagen hacia la derecha */
+    margin-right: 30px; /* Añade un margen a la derecha de la imagen */
+    display: block; /* Ajusta el margen automáticamente */
 }
+
+#logeolabel {
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus necesidades */
+    margin-bottom: 8px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+#logeo input {
+    font-size: 100px;
+    height: 50px;
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
